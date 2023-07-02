@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Wheel</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Adding div for video celibration -->
+    <div id="congratulationOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;"></div>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <div class="box1">
+                <span class="font span1"><h5>I pad </h5></span>
+                <span class="font span2"><h5>Whirlpool AC </h5></span>
+                <span class="font span3"><h5>Myntra Coupon </h5></span>
+                <span class="font span4"><h5>Speaker Portable</h5></span>
+                <span class="font span5"><h5>Samsung Ideapad</h5></span>
+            </div>
+            <div class="box2">
+                <span class="font span1"><h5>Try Again</h5></span>
+                <span class="font span2"><h5>OnePlus Airbud</h5></span>
+                <span class="font span3"><h5>Ipad Mini</h5></span>
+                <span class="font span4"><h5>10% Flipkart Discount</h5></span>
+                <span class="font span5"><h5>Realme X9 5g</h5></span>
+            </div>
+        </div>
+        <!-- Button to rotate the wheel -->
+        <button class="spin" id="spin" onclick="spin()">SPIN</button>
+    </div>
+    <!-- Audio for winning sound and best of luck sound -->
+    <audio controls="controls" id="applause" src="/assets/audio/apple.mp3" type="audion/mp3"></audio>
+    <audio controls="controls" id="wheel" src="/assets/audio/wheel.mp3" type="audion/mp3"></audio>
+    <audio controls="controls" id="tryAgain" src="/assets/audio/Again.mp3" type="audion/mp3"></audio>
+
+    <!-- Adding sweet Alert to show the gift -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
